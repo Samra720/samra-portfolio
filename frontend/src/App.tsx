@@ -1,4 +1,5 @@
 import HeroSection from './components/HeroSection';
+import ServicesSection from './components/ServicesSection';
 import './App.css'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <HeroSection />
+      <ServicesSection />
     </>
   )
 }
