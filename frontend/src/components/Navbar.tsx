@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 function Navbar() {
   return (
     <nav className="flex items-center justify-between fixed top-0 left-0 w-full z-50 bg-transparent text-white px-24 pt-10">
-      <h3 className="text-lg font-semibold tracking-wide border-b-2">It's Me</h3>
+      <h3 className="text-lg font-semibold tracking-wide border-b-2 mb-10">It's Me</h3>
 
       <ul className="flex gap-10 text-gray-300">
         <li className="hover:text-white transition cursor-pointer border-t-2">
