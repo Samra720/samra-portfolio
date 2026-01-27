@@ -1,21 +1,30 @@
 function Navbar() {
-  return <div className="flex justify-between border border-white">
-    <p className="border-b my-auto">It's Me</p>
-    <div className="flex gap-5">
-      <div className=" w-42.5">
-        <h3>My Projects</h3>
-        <p>See all the nice projects I've done</p>
-      </div>
-      <div className="w-42.5">
-        <h3>About Me</h3>
-        <p>Learn about my self what I do</p>
-      </div>
-      <div className="w-42.5">
-        <h3>Contact me</h3>
-        <p>alisamra720@gmail.com</p>
-      </div>
-    </div>
-  </div>
+  return (
+    <nav className="flex items-center justify-between fixed top-0 left-0 w-full z-50 bg-transparent text-white px-24 pt-10">
+      <h3 className="text-lg font-semibold tracking-wide border-b-2">It's Me</h3>
+
+      <ul className="flex gap-10 text-gray-300">
+        <li className="hover:text-white transition cursor-pointer border-t-2">
+          <div className=" w-42.5">
+            <h3 className="font-semibold mb-2 pt-1">My Projects</h3>
+            <p>See all the nice projects I've done</p>
+          </div>
+        </li>
+        <li className="hover:text-white transition cursor-pointer border-t-2">
+          <div className="w-42.5">
+            <h3 className="font-semibold mb-2 pt-1">About Me</h3>
+            <p>Learn about my self what I do</p>
+          </div>
+        </li>
+        <li className="hover:text-white transition cursor-pointer border-t-2">
+          <div className="w-42.5">
+            <h3 className="font-semibold mb-2 pt-1">Contact me</h3>
+            <p>alisamra720@gmail.com</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Navbar;
