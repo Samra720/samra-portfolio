@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import GradientCarouselBar from "./Carousel";
 import Particles from "./Particles";
 import { FaArrowDown } from "react-icons/fa";
 import { GiHand } from "react-icons/gi";
@@ -7,7 +8,7 @@ import { FaCheck } from "react-icons/fa";
 
 function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-black text-white px-24 pt-30 pb-20">
+    <section className="relative">
 
       <div style={{ width: '100%', height: '700px', position: 'absolute', top: '0', right: '0' }}>
         <Particles
@@ -27,13 +28,13 @@ function HeroSection() {
       <div className="text-white mx-auto w-90 h-90 bg-[linear-gradient(to_top_right,#2b90a7_30%,#9dc497_40%,#fbe88c_50%,#edab84_60%,#933557_70%,#6b1d42_100%)] absolute -top-50 left-180 rotate-45 opacity-95 blur-2xl" />
 
       <Navbar />
-      <div className="grid grid-cols-2 gap-16 items-center">
+      <div className="grid grid-cols-2 gap-16 items-center min-h-screen bg-black text-white px-24 pt-30 pb-20">
         <div className="space-y-6 mt-15">
           <div>
             <GiHand className="text-[#f8b039] text-5xl" />
-            <h1 className="text-7xl font-light">Hello! <span className="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white to-[#05e2f6]">I'm Cb97</span></h1>
+            <h1 className="text-7xl font-light">Hello! <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-white to-[#05e2f6]">I'm Cb97</span></h1>
 
-            <div className="mt-7 flex justify-between max-w-[500px]">
+            <div className="mt-7 flex justify-between max-w-125">
               <div className="border w-40 my-auto" />
               <p className="text-3xl ml-3">Web Developer</p>
               <HiSparkles className="my-auto text-4xl" />
@@ -72,6 +73,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
+      <GradientCarouselBar />
     </section>
   );
 }
