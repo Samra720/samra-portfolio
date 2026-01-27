@@ -1,10 +1,6 @@
 #root {
-  /* text-align: center; */
   background-color: black;
   color: white;
-  height: 703px;
+  max-width: screen;
+  overflow-x: hidden;
 }
-/* #main {
-  padding: 20px;
-  background-color: aqua;
-} */

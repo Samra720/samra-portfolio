@@ -5,6 +5,10 @@ import { FaArrowDown } from "react-icons/fa";
 import { GiHand } from "react-icons/gi";
 import { HiSparkles } from "react-icons/hi";
 import { FaCheck } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 
 function HeroSection() {
   return (
@@ -28,7 +32,7 @@ function HeroSection() {
       <div className="text-white mx-auto w-90 h-90 bg-[linear-gradient(to_top_right,#2b90a7_30%,#9dc497_40%,#fbe88c_50%,#edab84_60%,#933557_70%,#6b1d42_100%)] absolute -top-50 left-180 rotate-45 opacity-95 blur-2xl" />
 
       <Navbar />
-      <div className="grid grid-cols-2 gap-16 items-center min-h-screen bg-black text-white px-24 pt-30 pb-20">
+      <div className="grid grid-cols-2 gap-16 items-center min-h-screen text-white px-24 pt-30 pb-20">
         <div className="space-y-6 mt-15">
           <div>
             <GiHand className="text-[#f8b039] text-5xl" />
@@ -66,7 +70,7 @@ function HeroSection() {
           />
         </div>
 
-        <div className="absolute left-170 top-105 rounded-full w-42 h-42 pt-1 pl-1 bg-linear-to-r from-red-500 via-yellow-500 to-blue-500">
+        <div className="absolute left-170 top-105 rounded-full w-42 h-42 pt-1 pl-1 bg-linear-to-r from-[#6580a8] via-[#9633b8] to-[#20c8c3]">
           <div className=" relative rounded-full w-40 h-40 px-10 py-14 text-4xl bg-[#10111a]">
             Hello
             <div className="border bg-white w-73 absolute top-19 -left-17 rotate-45"></div>
@@ -74,6 +78,16 @@ function HeroSection() {
         </div>
       </div>
       <GradientCarouselBar />
+      <div className="mt-35 px-24 flex items-center w-full justify-between pb-10">
+        <div className="border bg-white w-40"></div>
+        <div className="flex gap-18">
+          <a href=""><FaLinkedinIn className="inline mr-3" /> LinkedIn</a>
+          <a href=""><BsInstagram className="inline mr-3" /> Instagram</a>
+          <a href=""><FaFacebookF className="inline mr-3" /> Facebook</a>
+        </div>
+        <div className="border bg-white w-100"></div>
+        <a href=""><FaEnvelope className="inline mr-3" /> alisamra720@gmail.com</a>
+      </div>
     </section>
   );
 }

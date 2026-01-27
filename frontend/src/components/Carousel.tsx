@@ -16,9 +16,9 @@ function GradientCarouselBar() {
   ]);
 
   return (
-    <section className="relative overflow-hidden -rotate-6">
+    <section className="relative overflow-hidden w-[101%] -ml-2 -rotate-6">
       <div className="bg-linear-to-r from-[#6202ff] via-[#a814a3] to-[#f12742]">
-        <div className="flex px-24 py-6 animate-marquee gap-30">
+        <div className="flex px-24 py-4 animate-marquee gap-30">
           {[...sequence, ...sequence].map((el, index) =>
             el === 'icon' ? (
               <HiSparkles
