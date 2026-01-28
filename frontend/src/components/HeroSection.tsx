@@ -35,8 +35,8 @@ function HeroSection() {
       <div className="text-white mx-auto w-90 h-90 bg-[linear-gradient(to_top_right,#2b90a7_30%,#9dc497_40%,#fbe88c_50%,#edab84_60%,#933557_70%,#6b1d42_100%)] absolute -top-50 left-180 rotate-45 opacity-95 blur-2xl" />
 
       <Navbar />
-      <div className="grid grid-cols-2 gap-16 items-center min-h-screen text-white px-24 pt-30 pb-20">
-        <div className="space-y-6 mt-15">
+      <div className="grid grid-cols-2 gap-16 items-center min-h-screen text-white px-24 pb-20">
+        <div className="space-y-6">
           <div>
             <GiHand className="text-[#f8b039] text-5xl" />
             <h1 className="text-7xl font-light">Hello! <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-white to-[#05e2f6]">I'm Cb97</span></h1>
@@ -67,9 +67,9 @@ function HeroSection() {
 
         <div>
           <img
-            src="/images/Wallpaper33.png"
+            src="/images/Capture1.PNG"
             alt="Portrait of the product designer"
-            className="w-full h-130 object-cover rounded-2xl opacity-90"
+            className="w-full h-130 object-contain rounded-2xl opacity-90"
           />
         </div>
 
