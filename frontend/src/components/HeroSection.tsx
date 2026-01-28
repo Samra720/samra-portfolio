@@ -14,19 +14,22 @@ function HeroSection() {
   return (
     <section className="relative">
 
-      <div style={{ width: '100%', height: '600px', position: 'absolute', top: '0', right: '0' }}>
-        <Particles
-          particleColors={["#ffffff"]}
-          particleCount={500}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover
-          alphaParticles={false}
-          disableRotation={false}
-          pixelRatio={1}
-        />
+      <div className="inset-0 -z-10 pointer-events-none">
+        <div style={{ width: '100%', height: '700px', position: 'absolute', top: '0', right: '0' }}>
+          <Particles
+            particleColors={["#ffffff"]}
+            particleCount={600}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            // moveParticlesOnHover
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
       </div>
+
       <div className="border border-white w-40 rotate-45 bg-white absolute top-0 left-95" />
       <div className="border border-white w-55 rotate-45 bg-white absolute top-0 left-96" />
       <div className="text-white mx-auto w-90 h-90 bg-[linear-gradient(to_top_right,#2b90a7_30%,#9dc497_40%,#fbe88c_50%,#edab84_60%,#933557_70%,#6b1d42_100%)] absolute -top-50 left-180 rotate-45 opacity-95 blur-2xl" />

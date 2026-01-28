@@ -1,21 +1,23 @@
-// import Particles from "./Particles";
+import Particles from "./Particles";
 
 function ExperienceSection() {
   return (
     <div className="px-25 py-10 relative">
-      {/* <div style={{ width: '100%', height: '600px', position: 'absolute', top: '0', right: '0' }} className="z-0">
-        <Particles
-          particleColors={["#ffffff"]}
-          particleCount={500}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover
-          alphaParticles={false}
-          disableRotation={false}
-          pixelRatio={1}
-        />
-      </div> */}
+      <div className="inset-0 -z-10 pointer-events-none">
+        <div style={{ width: '100%', height: '600px', position: 'absolute', top: '0', right: '0' }}>
+          <Particles
+            particleColors={["#ffffff"]}
+            particleCount={100}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+      </div>
 
       <div>
         <div className="h-40 flex flex-col justify-between items-center text-center">
