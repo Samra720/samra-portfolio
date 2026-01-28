@@ -14,7 +14,7 @@ function HeroSection() {
   return (
     <section className="relative">
 
-      <div style={{ width: '100%', height: '700px', position: 'absolute', top: '0', right: '0' }}>
+      <div style={{ width: '100%', height: '600px', position: 'absolute', top: '0', right: '0' }}>
         <Particles
           particleColors={["#ffffff"]}
           particleCount={500}

@@ -13,3 +13,31 @@ function App() {
 }
 
 export default App
+
+// import {
+//   HeroSection,
+//   GradientCarouselBar,
+//   ServicesSection,
+//   ExperienceTimeline,
+//   CaseStudiesGrid,
+//   TestimonialSection,
+//   StatsSection,
+//   ContactSection,
+// } from './components/Chatgpt';
+
+// function App() {
+//   return (
+//     <>
+//       <HeroSection />
+//       <GradientCarouselBar />
+//       <ServicesSection />
+//       <ExperienceTimeline />
+//       <CaseStudiesGrid />
+//       <TestimonialSection />
+//       <StatsSection />
+//       <ContactSection />
+//     </>
+//   );
+// }
+
+// export default App;
