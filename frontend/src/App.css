@@ -4,3 +4,10 @@
   max-width: screen;
   overflow-x: hidden;
 }
+#experienceCards:hover #numbers{
+  background-color: white;
+  color: black
+}
+#experienceCards:hover {
+  background-color: #1e1e2a;
+}

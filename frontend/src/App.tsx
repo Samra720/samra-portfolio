@@ -1,5 +1,7 @@
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
+import ExperienceSection from './components/ExperienceSection';
+
 import './App.css'
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <>
       <HeroSection />
       <ServicesSection />
+      <ExperienceSection />
     </>
   )
 }
