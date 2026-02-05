@@ -38,7 +38,7 @@ function ServicesSection() {
           There are many variations of passages of Lorem Ipsum, but the
           majority have suffered alteration in some form.
         </p>
-        <button className="px-8 py-3 rounded-full bg-linear-to-r from-[#fe2a2f] via-[#bf178c] to-[#6100fd] text-lg hover:shadow-[0_0_15px_3px_rgba(255,255,255,0.7)]">
+        <button className="px-8 py-3 rounded-full bg-linear-to-r from-[#fe2a2f] via-[#bf178c] to-[#6100fd] text-lg hover:shadow-[0_0_15px_3px_rgba(255,255,255,0.7)] cursor-pointer">
           All Services
         </button>
       </div>
@@ -50,7 +50,7 @@ function ServicesSection() {
 
           <button
             onClick={() => safeChange(nextPage)}
-            className="w-14 h-14 rounded-full bg-white text-black text-xl flex items-center justify-center"
+            className="w-14 h-14 rounded-full bg-white text-black text-xl flex items-center justify-center cursor-pointer"
           >
             <FaArrowDownLong />
           </button>
