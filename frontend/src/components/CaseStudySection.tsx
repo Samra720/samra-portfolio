@@ -4,7 +4,7 @@ import Particles from "./Particles";
 
 function CaseStudySection() {
   return (
-    <div className="px-25 py-10 relative">
+    <div className="px-25 pt-10 relative">
 
       <div className="inset-0 -z-10 pointer-events-none">
         <div style={{ width: '100%', height: '1400px', position: 'absolute', top: '0', right: '0' }}>
