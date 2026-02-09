@@ -3,6 +3,7 @@ import ServicesSection from './components/ServicesSection';
 import ExperienceSection from './components/ExperienceSection';
 import CaseStudySection from './components/CaseStudySection';
 import ClientFeedbackSection from './components/ClientFeedbackSection';
+import StatsSection from './components/StatsSection';
 
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
       <ExperienceSection />
       <CaseStudySection />
       <ClientFeedbackSection />
+      <StatsSection />
     </>
   )
 }
