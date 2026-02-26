@@ -94,7 +94,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="px-24 my-40">
+    <section className="px-24 mt-40">
       <div className="text-center">
         <h1 className="font-bold text-7xl max-w-225 mx-auto mb-6"><span className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_bottom_right,#ff282e_25%,#960db9_60%,#6200fe_100%)]">Say Hi!</span> and tell me about <span className="block text-right"><FaArrowRightLong className="inline" /> your idea</span></h1>
         <p className="text-[#9d9ea6] text-3xl">Have a nice works? Reach out and let's chat.</p>

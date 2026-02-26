@@ -5,6 +5,7 @@ import CaseStudySection from './components/CaseStudySection';
 import ClientFeedbackSection from './components/ClientFeedbackSection';
 import StatsSection from './components/StatsSection';
 import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 import { Toaster } from "react-hot-toast";
 
 
@@ -22,6 +23,7 @@ function App() {
       <ClientFeedbackSection />
       <StatsSection />
       <ContactSection />
+      <Footer />
     </>
   )
 }
