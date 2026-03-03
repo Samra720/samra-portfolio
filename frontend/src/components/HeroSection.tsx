@@ -59,7 +59,7 @@ function HeroSection() {
             <button className="px-8 py-3 rounded-full bg-linear-to-r from-[#ff2931] via-[#bf178c] to-[#6100fd] text-lg hover:shadow-[0_0_15px_3px_rgba(255,255,255,0.7)] cursor-pointer">
               Let's Talk
             </button>
-            <button className="py-3 ml-10 border-b-2 border-white text-gray-300 flex cursor-pointer">
+            <button className="py-3 ml-10 border-b-2 border-white text-gray-300 flex hover:text-white transition-all cursor-pointer">
               Download Cv <FaArrowDown className="ml-4 my-auto" />
             </button>
           </div>
