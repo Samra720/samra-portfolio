@@ -25,7 +25,7 @@ function ServicesSection() {
   };
 
   return (
-    <section className="bg-black text-white px-24 py-24">
+    <section className="text-main px-24 py-24">
       <div className="flex justify-between items-center mb-15">
         <div className="w-90">
           <p className="mb-2">
@@ -38,7 +38,13 @@ function ServicesSection() {
           There are many variations of passages of Lorem Ipsum, but the
           majority have suffered alteration in some form.
         </p>
-        <button className="px-8 py-3 rounded-full bg-linear-to-r from-[#fe2a2f] via-[#bf178c] to-[#6100fd] text-lg hover:shadow-[0_0_15px_3px_rgba(255,255,255,0.7)] cursor-pointer">
+        <button
+          className="px-8 py-3 rounded-full text-white text-lg cursor-pointer transition-all duration-300"
+          style={{
+            backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
+            boxShadow: `0 0 15px 3px var(--btn-shadow)`
+          }}
+        >
           All Services
         </button>
       </div>
@@ -50,16 +56,14 @@ function ServicesSection() {
 
           <button
             onClick={() => safeChange(nextPage)}
-            className="w-14 h-14 rounded-full bg-white text-black text-xl flex items-center justify-center cursor-pointer"
+            className="w-14 h-14 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-300"
+            style={{ backgroundColor: 'var(--btn-bg)', color: 'var(--btn-text)' }}
           >
             <FaArrowDownLong />
           </button>
         </div>
 
-        <div
-          className="overflow-hidden"
-          style={{ height: `${CARD_HEIGHT}px` }}
-        >
+        <div className="overflow-hidden" style={{ height: `${CARD_HEIGHT}px` }}>
           <div
             className="flex flex-col transition-transform duration-500 ease-out"
             style={{ transform: `translateY(-${page * (CARD_HEIGHT + GAP)}px)` }}
@@ -68,17 +72,14 @@ function ServicesSection() {
               <ServiceCard
                 icon={<CiPen className="text-6xl" />}
                 title="UI/UX CREATIVE DESIGN"
-                link="/uiux"
               />
               <ServiceCard
                 icon={<MdOutlineMonitor className="text-6xl" />}
                 title="VISUAL GRAPHIC DESIGN"
-                link="/graphic"
               />
               <ServiceCard
                 icon={<PiStrategy className="text-6xl" />}
                 title="STRATEGY & DIGITAL MARKETING"
-                link="/marketing"
               />
             </div>
 
@@ -86,17 +87,14 @@ function ServicesSection() {
               <ServiceCard
                 icon={<FaNodeJs className="text-6xl" />}
                 title="WEB DEVELOPMENT"
-                link="/web"
               />
               <ServiceCard
                 icon={<FaReact className="text-6xl" />}
                 title="FRONTEND DEVELOPMENT"
-                link="/frontend"
               />
               <ServiceCard
                 icon={<FaNode className="text-6xl" />}
                 title="BACKEND DEVELOPMENT"
-                link="/backend"
               />
             </div>
           </div>

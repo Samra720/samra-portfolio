@@ -98,9 +98,9 @@ export default function ContactSection() {
       <div>
         <div className="text-center">
           <h1 className="font-bold text-7xl max-w-225 mx-auto mb-6"><span className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_bottom_right,#ff282e_25%,#960db9_60%,#6200fe_100%)]">Say Hi!</span> and tell me about <span className="block text-right"><FaArrowRightLong className="inline" /> your idea</span></h1>
-          <p className="text-[#9d9ea6] text-3xl">Have a nice works? Reach out and let's chat.</p>
+          <p className="text-muted text-3xl">Have a nice works? Reach out and let's chat.</p>
         </div>
-        <div className="text-white min-h-screen px-6 py-16">
+        <div className="text-main min-h-screen px-6 py-16">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -220,16 +220,15 @@ export default function ContactSection() {
                   type="submit"
                   whileTap={{ scale: 0.95 }}
                   disabled={loading}
-                  className="relative px-10 py-4 rounded-full font-medium
-              bg-linear-to-r from-red-500 to-purple-600
-              hover:from-pink-500 hover:to-indigo-600
-              transition-all duration-300
-              shadow-lg shadow-purple-500/40
-              hover:shadow-purple-500/60 ml-auto"
+                  className="relative px-10 py-4 rounded-full font-medium text-white bg-linear-to-r from-red-500 to-purple-600 hover:from-pink-500 hover:to-indigo-600 transition-all duration-300 shadow-lg shadow-purple-500/40 hover:shadow-purple-500/60 ml-auto"
+                  style={{
+                    backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
+                    boxShadow: `0 0 15px 3px var(--btn-shadow)`
+                  }}
                 >
                   {loading ? "Sending..." : "Send me your message"}
                 </motion.button>
-                <p className="text-[#9d9ea6] text-right">I'll try my best to get back to you as soon as possible!</p>
+                <p className="text-muted text-right">I'll try my best to get back to you as soon as possible!</p>
               </div>
             </form>
           </motion.div>

@@ -22,7 +22,7 @@ function CaseStudySection() {
       </div>
 
       <div className="h-40 flex flex-col justify-between items-center text-center">
-        <div className="h-3 w-3 border rounded-full shadow-[0_0_15px_13px_rgba(255,255,255,0.7)]"></div>
+        <div className="h-3 w-3 border rounded-full shadow-glow"></div>
         <h2 className="text-5xl font-bold mt-6">CASE STUDY</h2>
         <p className="w-120">
           There are many variations of passages of Lorem Ipsum, but the
@@ -37,7 +37,7 @@ function CaseStudySection() {
             className="w-160 h-90 object-contain"
           />
           <div className="px-15 py-8 w-160 h-90 flex flex-col items-start justify-around">
-            <p className="font-semibold text-xl text-black bg-white px-9 py-2 rounded-full">WEB APP</p>
+            <p className="font-semibold text-xl bg-main px-9 py-2 rounded-full" style={{ color: 'var(--btn-text)' }}>WEB APP</p>
             <h3 className="text-4xl font-bold mt-6">HTML, CSS & JS E-commerce Web Page.</h3>
             <NavLink to="/products" className="text-xl border-b-2 pb-2 hover:pb-1 transition-all cursor-pointer">See Details <FiArrowUpRight className="inline ml-2" /></NavLink>
           </div>
@@ -45,7 +45,7 @@ function CaseStudySection() {
 
         <div className="my-10 flex justify-between">
           <div className="px-15 py-8 w-160 h-90 flex flex-col items-start justify-around">
-            <p className="font-semibold text-xl text-black bg-white px-9 py-2 rounded-full">WEB APP</p>
+            <p className="font-semibold text-xl bg-main px-9 py-2 rounded-full" style={{ color: 'var(--btn-text)' }}>WEB APP</p>
             <h3 className="text-4xl font-bold mt-6">HTML, CSS & JS E-commerce Web Page.</h3>
             <NavLink to="/products" className="text-xl border-b-2 pb-2 hover:pb-1 transition-all cursor-pointer">See Details <FiArrowUpRight className="inline ml-2" /></NavLink>
           </div>
@@ -63,7 +63,7 @@ function CaseStudySection() {
             className="w-160 h-90 object-contain"
           />
           <div className="px-15 py-8 w-160 h-90 flex flex-col items-start justify-around">
-            <p className="font-semibold text-xl text-black bg-white px-9 py-2 rounded-full">WEB APP</p>
+            <p className="font-semibold text-xl bg-main px-9 py-2 rounded-full" style={{ color: 'var(--btn-text)' }}>WEB APP</p>
             <h3 className="text-4xl font-bold mt-6">HTML, CSS & JS E-commerce Web Page.</h3>
             <NavLink to="/products" className="text-xl border-b-2 pb-2 hover:pb-1 transition-all cursor-pointer">See Details <FiArrowUpRight className="inline ml-2" /></NavLink>
           </div>

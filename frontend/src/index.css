@@ -1,13 +1,97 @@
 @import "tailwindcss";
 
+@theme {
+  --color-main: var(--text-color);
+  --color-muted: var(--text-muted);
+  --color-regal: var(--bg-color);
+  --color-main: var(--text-color);
+  --color-card-hover: var(--hover-bg);
+  --shadow-glow: 0 0 15px 13px var(--glow-hex);
+}
+
+:root {
+  /* Default Dark Theme */
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --hover-bg: #1e1e2a;
+  --text-muted: #c4c5cc;
+  --text-main: #ffffff;
+  --name-color-start: #ffffff; /* Start of gradient */
+  --name-color-end: #05e2f6;   /* The teal end */
+  --btn-bg: #ffffff; /* For the small arrow button */
+  --btn-text: #000000;
+
+  /* For the Gradient Buttons */
+  --btn-grad-from: #fe2a2f;
+  --btn-grad-via: #bf178c;
+  --btn-grad-to: #6100fd;
+  --btn-shadow: rgba(255, 255, 255, 0.3);
+
+  /* For the Service Cards */
+  --card-border: #1f2937;    /* gray-800 */
+  --card-bg-from: #11182799; /* gray-900/60 */
+  --card-bg-to: #000000;
+  --card-text: #ffffff;
+  --card-link: #9ca3af;     /* gray-400 */
+  --card-link-hover: #ffffff; /* White in Dark Mode */
+    /* --card-hover-bg: #111827;  */
+  --card-hover-text: #ffffff;
+  --card-hover-border: #ffffff;
+
+  --glow-hex: rgba(255, 255, 255, 0.7);
+  --card-hover-bg: #1e1e2a; /* Dark Navy for Dark Mode */
+  --card-hover-text: #ffffff;
+  
+  --num-bg: #ffffff; 
+  --num-text: #000000;
+}
+
+[data-theme='light'] {
+  /* Light Theme overrides */
+  --bg-color: #f3f4f6; /* Soft white/gray */
+  --text-color: #000000; 
+  --hover-bg: #e5e7eb;
+  --text-muted: #000000;
+  --text-main: #000000;
+  --name-color-start: #000000;
+  --name-color-end: #000000; /* Force the end of the gradient to black too */
+
+  --btn-bg: #000000; 
+  --btn-text: #ffffff;
+
+  /* Force Gradients to Black */
+  --btn-grad-from: #000000;
+  --btn-grad-via: #000000;
+  --btn-grad-to: #000000;
+  --btn-shadow: rgba(0, 0, 0, 0.2);
+
+  --card-border: #000000;   /* FULL BLACK borders */
+  --card-bg-from: #ffffff;
+  --card-bg-to: #ffffff;
+  --card-text: #000000;
+  --card-link: #374151;
+  --card-hover-bg: #000000; /* Turns Black on hover */
+  --card-hover-text: #ffffff; /* Text turns White on hover */
+  --card-hover-border: #000000;
+  --card-link-hover: #000000; /* Black in Light Mode */
+
+  --glow-hex: rgba(0, 0, 0, 0.4);
+  --bg-color: #f3f4f6;
+  --text-color: #000000;
+  
+  /* When the card turns black in light mode, text must turn white */
+  --card-hover-bg: #000000;
+  --card-hover-text: #ffffff; 
+
+  --num-bg: #000000;
+  --num-text: #ffffff;
+}
+
 @keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 .animate-marquee {
   animation: marquee 15s linear infinite;
 }
+

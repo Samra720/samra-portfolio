@@ -1,13 +1,21 @@
 #root {
-  background-color: black;
-  color: white;
-  max-width: screen;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 100vw;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-#experienceCards:hover #numbers{
-  background-color: white;
-  color: black
+
+#experienceCards:hover #numbers {
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
+
 #experienceCards:hover {
-  background-color: #1e1e2a;
+  background-color: var(--hover-bg);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.6;
 }

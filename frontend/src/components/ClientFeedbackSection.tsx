@@ -7,7 +7,7 @@ export default function ClientFeedbackSection() {
     <div className="px-24 py-10">
       <div className="flex justify-end gap-135 items-center">
         <h2 className="border-b-2 text-xl font-semibold inline pb-1">CLIENT FEEDBACK</h2>
-        <LuCross className="text-white inline text-5xl rotate-45" />
+        <LuCross className="text-main inline text-5xl rotate-45" />
       </div>
 
       <div className="pl-8">
@@ -22,10 +22,10 @@ export default function ClientFeedbackSection() {
         <div className="px-15 py-8 w-160 h-90 flex flex-col items-start justify-around">
 
           <div className="relative inline-block">
-            <h2 className="text-white text-2xl font-semibold">
+            <h2 className="text-main text-2xl font-semibold">
               Syeda Samra Ali
             </h2>
-            <p className="text-[#9d9ea6] text-xl pb-6 pt-2">MERN Stack Intern, Sprouto</p>
+            <p className="text-muted text-xl pb-6 pt-2">MERN Stack Intern, Sprouto</p>
             <svg
               viewBox="0 0 200 10"
               preserveAspectRatio="none"
@@ -34,16 +34,16 @@ export default function ClientFeedbackSection() {
               <path
                 d="M0 5 Q10 0 20 6 T40 5 T60 5 T80 5 T100 5 T120 5 T140 5 T160 5 T180 5 T200 5"
                 fill="none"
-                stroke="white"
+                stroke="var(--text-color)"
                 strokeWidth="2"
               />
             </svg>
           </div>
 
           <div className="ml-17">
-            <LuWaves className="text-4xl inline" />
-            <LuWaves className="text-4xl inline -mx-2" />
-            <LuWaves className="text-4xl inline" />
+            <LuWaves className="text-4xl inline text-main" />
+            <LuWaves className="text-4xl inline text-main -mx-2" />
+            <LuWaves className="text-4xl inline text-main" />
           </div>
         </div>
         <img
