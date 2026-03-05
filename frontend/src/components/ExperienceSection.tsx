@@ -2,7 +2,7 @@ import Particles from "./Particles";
 
 function ExperienceSection() {
   return (
-    <div className="px-25 py-10 relative">
+    <div className="px-6 md:px-25 py-10 relative overflow-hidden">
       <div className="inset-0 -z-10 pointer-events-none">
         <div style={{ width: '100%', height: '600px', position: 'absolute', top: '0', right: '0' }}>
           <Particles
@@ -20,53 +20,53 @@ function ExperienceSection() {
       </div>
 
       <div>
-        <div className="h-40 flex flex-col justify-between items-center text-center">
+        <div className="flex flex-col justify-between items-center text-center mb-10">
           <div className="h-3 w-3 border rounded-full shadow-glow"></div>
-          <h2 className="text-5xl font-bold mt-6">EXPERIENCE</h2>
-          <p className="w-120">
+          <h2 className="text-4xl md:text-5xl font-bold mt-6">EXPERIENCE</h2>
+          <p className="max-w-xl mt-4 opacity-80">
             There are many variations of passages of Lorem Ipsum, but the
             majority have suffered alteration in some form.
           </p>
         </div>
-        <div className="mt-15">
 
+        <div className="mt-10 md:mt-15">
           <div
-            className="group border border-[#171725] px-12 py-12 my-10 flex justify-between items-center transition-all duration-300 cursor-pointer 
-             hover:bg-(--card-hover-bg) hover:text-(--card-hover-text)"
-            /* Changed 'color' to 'var(--text-color)' to ensure it starts black/white correctly */
+            className="group border border-[#171725] px-8 md:px-12 py-10 md:py-12 my-6 md:my-10 
+              flex flex-col md:flex-row justify-between items-center text-center md:text-left
+              transition-all duration-300 cursor-pointer 
+              hover:bg-(--card-hover-bg) hover:text-(--card-hover-text)"
             style={{ color: 'var(--text-color)' }}
           >
-            <div className="flex gap-15">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-15 items-center md:items-center">
               <div
                 className="w-14 h-14 text-2xl font-bold flex items-center justify-center transition-all duration-300
-                 bg-(--num-bg) text-(--num-text) 
-                 group-hover:bg-(--num-text) group-hover:text-(--num-bg)"
+                  bg-(--num-bg) text-(--num-text) 
+                  group-hover:bg-(--num-text) group-hover:text-(--num-bg)"
               >
                 1
               </div>
 
               <div>
-                {/* Added 'text-inherit' so it follows the parent's hover:text color */}
                 <h3 className="text-2xl font-bold pb-1 group-hover:text-white!">MERN Stack Intern</h3>
                 <p className="text-md opacity-80 group-hover:text-white!">Sprouto - Lahore</p>
               </div>
             </div>
 
-            {/* Added 'text-inherit' and 'group-hover:border-white' for that vertical line */}
-            <p className="font-semiblack text-xl px-8 border-l-2 border-main group-hover:text-white! group-hover:border-white transition-colors">
+            <p className="mt-8 md:mt-0 font-semiblack text-xl md:px-8 md:border-l-2 border-main group-hover:text-white! group-hover:border-white transition-colors">
               JOB DURATION - 3 MONTHS
             </p>
           </div>
 
-
           <div
-            className="group border border-[#171725] px-12 py-12 my-10 flex justify-between items-center transition-all duration-300 cursor-pointer hover:bg-(--card-hover-bg) hover:text-(--card-hover-text)"
+            className="group border border-[#171725] px-8 md:px-12 py-10 md:py-12 my-6 md:my-10 
+              flex flex-col md:flex-row justify-between items-center text-center md:text-left
+              transition-all duration-300 cursor-pointer hover:bg-(--card-hover-bg) hover:text-(--card-hover-text)"
             style={{ color: 'var(--card-text)' }}
           >
-            <div className="flex gap-15">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-15 items-center md:items-center">
               <div
                 className="w-14 h-14 text-2xl font-bold flex items-center justify-center transition-all duration-300
-                 bg-(--num-bg) text-(--num-text) group-hover:bg-(--num-text) group-hover:text-(--num-bg)"
+                  bg-(--num-bg) text-(--num-text) group-hover:bg-(--num-text) group-hover:text-(--num-bg)"
               >
                 2
               </div>
@@ -77,7 +77,7 @@ function ExperienceSection() {
               </div>
             </div>
 
-            <p className="font-semiblack text-xl px-8 border-l-2 border-main group-hover:text-white!">
+            <p className="mt-8 md:mt-0 font-semiblack text-xl md:px-8 md:border-l-2 border-main group-hover:text-white!">
               JOB DURATION - 14 MONTHS
             </p>
           </div>
