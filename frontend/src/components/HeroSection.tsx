@@ -13,7 +13,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 function HeroSection() {
   return (
-    <section className="relative">
+    <section className="relative overflow-x-hidden">
 
       <div className="inset-0 -z-10 pointer-events-none">
         <div style={{ width: '100%', height: '700px', position: 'absolute', top: '0', right: '0' }}>
@@ -23,7 +23,6 @@ function HeroSection() {
             particleSpread={10}
             speed={0.1}
             particleBaseSize={100}
-            // moveParticlesOnHover
             alphaParticles={false}
             disableRotation={false}
             pixelRatio={1}
@@ -31,78 +30,85 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="border border-main w-40 rotate-45 bg-main absolute top-0 left-95" />
-      <div className="border border-main w-55 rotate-45 bg-main absolute top-0 left-96" />
-      <div className="text-main mx-auto w-90 h-90 bg-[linear-gradient(to_top_right,#2b90a7_30%,#9dc497_40%,#fbe88c_50%,#edab84_60%,#933557_70%,#6b1d42_100%)] absolute -top-50 left-180 rotate-45 opacity-95 blur-2xl" />
+      <div className="hidden lg:block border border-main w-40 rotate-45 bg-main absolute top-0 left-95" />
+      <div className="hidden lg:block border border-main w-55 rotate-45 bg-main absolute top-0 left-96" />
+      <div className="text-main mx-auto w-90 h-90 bg-[linear-gradient(to_top_right,#2b90a7_30%,#9dc497_40%,#fbe88c_50%,#edab84_60%,#933557_70%,#6b1d42_100%)] absolute -top-50 left-80 md:left-180 rotate-45 opacity-95 blur-2xl" />
 
       <Navbar />
-      <div className="grid grid-cols-2 gap-16 items-center min-h-screen text-white px-24 pb-20">
-        <div className="space-y-6">
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-screen text-white px-6 md:px-24 pb-20 pt-10 md:pt-0">
+        
+        <div className="space-y-6 order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
           <div>
-            <GiHand className="text-[#f8b039] text-5xl" />
-            <h1 className="text-7xl font-light text-main">
-              Hello!
-              <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-(--name-color-start)">
+            <GiHand className="text-[#f8b039] text-4xl md:text-5xl" />
+            <h1 className="text-5xl md:text-7xl font-light text-main">
+              Hello! <br className="md:hidden" />
+              <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-(--name-color-start) to-(--name-color-end)">
                 I'm Cb97
               </span>
             </h1>
-            {/* <h1 className="text-7xl font-light">Hello! <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-white to-[#05e2f6]">I'm Cb97</span></h1> */}
 
-            <div className="mt-7 text-main flex justify-between max-w-125">
-              <div className="border w-40 my-auto" />
-              <p className="text-3xl ml-3">Web Developer</p>
-              <HiSparkles className="my-auto text-4xl" />
+            <div className="mt-7 text-main flex items-center justify-between max-w-125">
+              <div className="border w-16 md:w-40 my-auto" />
+              <p className="text-xl md:text-3xl ml-3">Web Developer</p>
+              <HiSparkles className="my-auto text-2xl md:text-4xl" />
             </div>
           </div>
+
           <div className="text-muted max-w-xl">
             <p>Hello! I'm Samra. I'm a <span className="text-white font-medium">Web Developer, design thinker, product designer,</span> experience strategist, generative artist & human-loving introvert</p>
-            <ul className="my-13">
+            <ul className="my-8 md:mt-13 space-y-2">
               <li><FaCheck className="inline mr-4 mb-1" /> Product must be authentic</li>
               <li><FaCheck className="inline mr-4 mb-1" /> Solve pain points elegantly</li>
               <li><FaCheck className="inline mr-4 mb-1" /> User testing, feedback and validation</li>
             </ul>
           </div>
-          <div className="flex gap-4">
-            <button className="px-8 py-3 rounded-full text-white text-lg cursor-pointer transition-all duration-300"
+
+          <div className="flex flex-col sm:flex-row gap-6 md:gap-4">
+            <button className="w-full sm:w-auto px-8 py-3 rounded-full text-white text-lg cursor-pointer transition-all duration-300"
               style={{
                 backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
                 boxShadow: `0 0 15px 3px var(--btn-shadow)`
               }}>
               Let's Talk
             </button>
-            <button className="py-3 ml-10 border-b-2 border-main text-muted flex hover:text-main transition-all cursor-pointer">
+            <button className="w-fit py-3 sm:ml-10 border-b-2 border-main text-muted flex hover:text-main transition-all cursor-pointer">
               Download Cv <FaArrowDown className="ml-4 my-auto" />
             </button>
           </div>
         </div>
 
-        <div>
+        <div className="relative order-1 lg:order-2">
           <img
             src="/images/Capture1.PNG"
-            alt="Portrait of the product designer"
-            className="w-full h-130 object-contain rounded-2xl opacity-90"
+            alt="Portrait"
+            className="w-full h-80 md:h-130 object-contain rounded-2xl opacity-90"
           />
-        </div>
-
-        <div className="absolute left-170 top-105 rounded-full w-42 h-42 pt-1 pl-1 bg-linear-to-r from-[#6580a8] via-[#9633b8] to-[#20c8c3]">
-          <div className="relative rounded-full w-40 h-40 px-10 py-14 text-4xl bg-[#10111a]">
-            Hello
-            <div className="border bg-white w-73 absolute top-19 -left-17 rotate-45"></div>
+          
+          <div className="hidden lg:block absolute left-1/2 lg:left-[-10%] top-full lg:top-1/2 -translate-x-1/2 lg:-translate-y-1/2 rounded-full w-42 h-42 pt-1 pl-1 bg-linear-to-r from-[#6580a8] via-[#9633b8] to-[#20c8c3]">
+            <div className="relative rounded-full w-40 h-40 px-10 py-14 text-4xl bg-[#10111a]">
+              Hello
+              <div className="border bg-white w-73 absolute top-19 -left-17 rotate-45"></div>
+            </div>
           </div>
         </div>
       </div>
+
       <GradientCarouselBar />
-      <div className="mt-35 px-24 flex items-center w-full justify-between pb-10">
-        <div className="border border-main bg-main w-40"></div>
-        <div className="flex gap-18">
-          <a href=""><FaLinkedinIn className="inline mr-3" /> LinkedIn</a>
-          <a href=""><BsInstagram className="inline mr-3" /> Instagram</a>
-          <a href=""><FaFacebookF className="inline mr-3" /> Facebook</a>
+
+      <div className="mt-20 md:mt-35 px-6 md:px-24 flex flex-col lg:flex-row items-center w-full justify-between gap-8 pb-10">
+        <div className="hidden lg:block border border-main bg-main w-40"></div>
+        <div className="flex flex-wrap justify-center gap-6 md:gap-18">
+          <a href="" className="text-muted hover:text-main"><FaLinkedinIn className="inline mr-2" /> LinkedIn</a>
+          <a href="" className="text-muted hover:text-main"><BsInstagram className="inline mr-2" /> Instagram</a>
+          <a href="" className="text-muted hover:text-main"><FaFacebookF className="inline mr-2" /> Facebook</a>
         </div>
-        <div className="border border-main bg-mian w-100"></div>
-        <a href=""><FaEnvelope className="inline mr-3" /> alisamra720@gmail.com</a>
+        <div className="hidden lg:block border border-main bg-main w-60"></div>
+        <a href="" className="text-muted hover:text-main whitespace-nowrap"><FaEnvelope className="inline mr-3" /> alisamra720@gmail.com</a>
       </div>
     </section>
   );
 }
+
+
 export default HeroSection;

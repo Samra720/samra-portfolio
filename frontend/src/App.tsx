@@ -50,48 +50,8 @@ export default App;
 
 
 
+// TO SHOW MY FORMER SUPERVISOR HOW THE CODE LOOKS THE WAY HE THOUGHT I WROTE IT, I HAVE COMMENTED OUT THE CODE BELOW AND UNCOMMENTED THE CODE ABOVE. THE CODE BELOW IS THE WAY HE THOUGHT I WROTE IT, BUT IN REALITY, I WROTE THE CODE ABOVE. hahaha I wrote it for you myself, not AI!!! tbh I only wrote till the first comma and got the rest auto suggested lol
 
-
-// import HeroSection from './components/HeroSection';
-// import ServicesSection from './components/ServicesSection';
-// import ExperienceSection from './components/ExperienceSection';
-// import CaseStudySection from './components/CaseStudySection';
-// import ClientFeedbackSection from './components/ClientFeedbackSection';
-// import StatsSection from './components/StatsSection';
-// import ContactSection from './components/ContactSection';
-// import Footer from './components/Footer';
-// import { Toaster } from "react-hot-toast";
-
-
-// import './App.css'
-
-// function App() {
-
-//   return (
-//     <>
-//       <Toaster position="top-right" />
-//       <HeroSection />
-//       <ServicesSection />
-//       <ExperienceSection />
-//       <CaseStudySection />
-//       <ClientFeedbackSection />
-//       <StatsSection />
-//       <ContactSection />
-//       <Footer />
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
-
-
-
-
-
-// TO SHOW MY FORMER SUPERVISOR HOW THE CODE LOOKS THE WAY HE THOUGHT I WROTE IT, I HAVE COMMENTED OUT THE CODE ABOVE AND UNCOMMENTED THE CODE BELOW. THE CODE BELOW IS THE WAY HE THOUGHT I WROTE IT, BUT IN REALITY, I WROTE THE CODE ABOVE.
 // import {
 //   HeroSection,
 //   GradientCarouselBar,
