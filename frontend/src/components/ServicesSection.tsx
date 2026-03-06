@@ -33,7 +33,7 @@ function ServicesSection() {
   };
 
   return (
-    <section className="text-main px-6 desktop-lg:px-24 py-16 md:py-24 overflow-x-hidden">
+    <section className="text-main px-6 desktop-xlg:px-24 py-16 md:py-24 overflow-x-hidden">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-10 lg:mb-15 text-center lg:text-left">
         <div className="w-full lg:w-90">
           <p className="mb-2">

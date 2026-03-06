@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'desktop-lg': '1496px',
+        'desktop-xlg': '1496px',
       },
     },
   },
