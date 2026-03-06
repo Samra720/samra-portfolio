@@ -94,13 +94,24 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="px-24 mt-40">
+    <section className="px-6 md:px-12 xl:px-24 mt-20 md:mt-30 lg:mt-40">
       <div>
-        <div className="text-center">
-          <h1 className="font-bold text-7xl max-w-225 mx-auto mb-6"><span className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_bottom_right,#ff282e_25%,#960db9_60%,#6200fe_100%)]">Say Hi!</span> and tell me about <span className="block text-right"><FaArrowRightLong className="inline" /> your idea</span></h1>
-          <p className="text-muted text-3xl">Have a nice works? Reach out and let's chat.</p>
+        <div className="text-center mb-10 md:mb-20">
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:6xl xl:7xl max-w-4xl mx-auto mb-6 leading-tight">
+            <span className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_bottom_right,#ff282e_25%,#960db9_60%,#6200fe_100%)]">
+              Say Hi!
+            </span>{" "}
+            and tell me about{" "}
+            <span className="block md:text-right mt-2 md:mt-0">
+              <FaArrowRightLong className="hidden md:inline mr-4" /> your idea
+            </span>
+          </h1>
+          <p className="text-muted text-md sm:text-xl md:text-2xl lg:text-3xl px-4">
+            Have a nice works? Reach out and let's chat.
+          </p>
         </div>
-        <div className="text-main min-h-screen px-6 py-16">
+
+        <div className="text-main min-h-screen py-8 md:py-16">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -108,8 +119,6 @@ export default function ContactSection() {
             className="max-w-4xl mx-auto"
           >
             <form onSubmit={handleSubmit} className="space-y-10">
-
-              {/* Honeypot Field */}
               <input
                 type="text"
                 name="website"
@@ -120,8 +129,7 @@ export default function ContactSection() {
                 className="hidden"
               />
 
-              {/* Name + Email */}
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <label className="block mb-2 text-sm">
                     Name<span className="text-red-500">*</span>
@@ -129,9 +137,7 @@ export default function ContactSection() {
                   <input
                     type="text"
                     value={form.name}
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                      setForm({ ...form, name: e.target.value })
-                    }
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
                     placeholder="Hello..."
                     className="w-full bg-transparent border-b border-gray-600 focus:border-purple-500 outline-none py-2 transition"
                   />
@@ -144,52 +150,44 @@ export default function ContactSection() {
                   <input
                     type="email"
                     value={form.email}
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                      setForm({ ...form, email: e.target.value })
-                    }
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
                     placeholder="Where can I reply"
                     className="w-full bg-transparent border-b border-gray-600 focus:border-purple-500 outline-none py-2 transition"
                   />
                 </div>
               </div>
 
-              {/* Company */}
               <div>
                 <label className="block mb-2 text-sm">Company name</label>
                 <input
                   type="text"
                   value={form.company}
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                    setForm({ ...form, company: e.target.value })
-                  }
+                  onChange={(e) => setForm({ ...form, company: e.target.value })}
                   placeholder="Your company or website?"
                   className="w-full bg-transparent border-b border-gray-600 focus:border-purple-500 outline-none py-2 transition"
                 />
               </div>
 
-              {/* Services */}
               <div>
-                <label className="block mb-6 text-sm">
+                <label className="block mb-6 text-sm text-center md:text-left">
                   What’s in your mind?<span className="text-red-500">*</span>
                 </label>
 
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4">
                   {servicesList.map((service) => {
                     const isSelected = selectedServices.includes(service);
-
                     return (
                       <motion.button
                         key={service}
                         type="button"
                         layout
                         whileTap={{ scale: 0.95 }}
-                        whileHover={{ scale: 1.05 }}
-                        onClick={() => toggleService(service)}
-                        className={`px-5 py-2 rounded-full border transition-all duration-300
+                        className={`px-4 md:px-5 py-2 rounded-full border text-sm md:text-base transition-all duration-300
                       ${isSelected
-                            ? "bg-linear-to-r from-pink-500 to-purple-600 border-transparent shadow-lg shadow-purple-500/30"
-                            : "border-gray-600 hover:border-purple-500 hover:shadow-md hover:shadow-purple-500/20"
+                            ? "bg-linear-to-r from-pink-500 to-purple-600 border-transparent shadow-lg"
+                            : "border-gray-600 hover:border-purple-500"
                           }`}
+                        onClick={() => toggleService(service)}
                       >
                         {service}
                       </motion.button>
@@ -198,7 +196,6 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              {/* Message */}
               <div>
                 <label className="block mb-2 text-sm">
                   Message<span className="text-red-500">*</span>
@@ -206,21 +203,18 @@ export default function ContactSection() {
                 <textarea
                   rows={5}
                   value={form.message}
-                  onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-                    setForm({ ...form, message: e.target.value })
-                  }
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Tell me about your project..."
                   className="w-full bg-transparent border-b border-gray-600 focus:border-purple-500 outline-none py-2 transition resize-none"
                 />
               </div>
 
-              {/* Submit */}
-              <div className="flex flex-col justify-end w-full gap-3">
+              <div className="flex flex-col items-center md:items-end w-full gap-4">
                 <motion.button
                   type="submit"
                   whileTap={{ scale: 0.95 }}
                   disabled={loading}
-                  className="relative px-10 py-4 rounded-full font-medium text-white bg-linear-to-r from-red-500 to-purple-600 hover:from-pink-500 hover:to-indigo-600 transition-all duration-300 shadow-lg shadow-purple-500/40 hover:shadow-purple-500/60 ml-auto"
+                  className="w-full md:w-auto px-10 py-4 rounded-full font-medium text-white transition-all duration-300 shadow-lg"
                   style={{
                     backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
                     boxShadow: `0 0 15px 3px var(--btn-shadow)`
@@ -228,7 +222,9 @@ export default function ContactSection() {
                 >
                   {loading ? "Sending..." : "Send me your message"}
                 </motion.button>
-                <p className="text-muted text-right">I'll try my best to get back to you as soon as possible!</p>
+                <p className="text-muted text-center md:text-right text-sm">
+                  I'll try my best to get back to you as soon as possible!
+                </p>
               </div>
             </form>
           </motion.div>
