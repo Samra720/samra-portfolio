@@ -19,7 +19,6 @@ export default function ClientFeedbackSection() {
       </div>
 
       <div className="my-5 md:my-10 pr-0 xl:pr-20 flex flex-col xl:flex-row justify-between items-center gap-8 xl:gap-10">
-        {/* Left Content Div: Removed fixed w-160/h-90 on mobile to prevent squashing */}
         <div className="px-4 md:px-15 py-8 w-full xl:w-160 min-h-auto xl:h-90 flex flex-col items-center xl:items-start justify-around text-center xl:text-left">
 
           <div className="relative inline-block">
@@ -41,7 +40,6 @@ export default function ClientFeedbackSection() {
             </svg>
           </div>
 
-          {/* Removed ml-17 on mobile so waves center correctly */}
           <div className="mt-8 xl:ml-17">
             <LuWaves className="text-4xl inline text-main" />
             <LuWaves className="text-4xl inline text-main -mx-2" />
@@ -49,7 +47,6 @@ export default function ClientFeedbackSection() {
           </div>
         </div>
 
-        {/* Image: Stays responsive */}
         <img
           src="/images/ecommerce_jewellery_page.png"
           alt="ecommerce_jewellery_page"
