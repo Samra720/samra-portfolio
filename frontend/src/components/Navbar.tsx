@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MdArrowOutward, MdMenu, MdClose } from 'react-icons/md';
+import { scrollToId } from "../utils/scroll";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,37 +21,43 @@ function Navbar() {
         lg:flex lg:flex-row lg:static lg:w-auto lg:px-0 lg:gap-10 lg:pb-0
         text-muted
       `}>
-        
+
         <li className="hover:text-main transition cursor-pointer border-t-2">
-          <div className="w-full md:w-42.5">
-            <div className="flex justify-between">
-              <h3 className="font-bold text-xl mb-2 pt-1">My Projects</h3>
-              <MdArrowOutward className="my-auto" />
+          <a href="#my-projects" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "contact")}>
+            <div className="w-full md:w-42.5">
+              <div className="flex justify-between">
+                <h3 className="font-bold text-xl mb-2 pt-1">My Projects</h3>
+                <MdArrowOutward className="my-auto" />
+              </div>
+              <p>See all the nice projects I've done</p>
             </div>
-            <p>See all the nice projects I've done</p>
-          </div>
+          </a>
         </li>
 
         <li className="hover:text-main transition cursor-pointer border-t-2">
-          <div className="w-full md:w-42.5">
-            <div className="flex justify-between">
-              <h3 className="font-bold text-xl mb-2 pt-1">About Me</h3>
-              <MdArrowOutward className="my-auto" />
+          <a href="#about-me" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "contact")}>
+            <div className="w-full md:w-42.5">
+              <div className="flex justify-between">
+                <h3 className="font-bold text-xl mb-2 pt-1">About Me</h3>
+                <MdArrowOutward className="my-auto" />
+              </div>
+              <p>Learn about my self what I do</p>
             </div>
-            <p>Learn about my self what I do</p>
-          </div>
+          </a>
         </li>
 
         <li className="hover:text-main transition cursor-pointer border-t-2">
-          <div className="w-full md:w-42.5">
-            <div className="flex justify-between">
-              <h3 className="font-bold text-xl mb-2 pt-1">Contact me</h3>
-              <MdArrowOutward className="my-auto" />
+          <a href="#contact" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "contact")}>
+            <div className="w-full md:w-42.5">
+              <div className="flex justify-between">
+                <h3 className="font-bold text-xl mb-2 pt-1">Contact me</h3>
+                <MdArrowOutward className="my-auto" />
+              </div>
+              <p>alisamra720@gmail.com</p>
             </div>
-            <p>alisamra720@gmail.com</p>
-          </div>
+          </a>
         </li>
-        
+
       </ul>
     </nav>
   );

@@ -5,6 +5,7 @@ import { PiStrategy } from "react-icons/pi";
 import { CiPen } from "react-icons/ci";
 import { FaNodeJs, FaReact, FaNode } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
+import ThemeButton from './ThemeButton';
 
 const CARD_HEIGHT = 320;
 const GAP = 32;
@@ -46,15 +47,7 @@ function ServicesSection() {
           There are many variations of passages of Lorem Ipsum, but the
           majority have suffered alteration in some form.
         </p>
-        <button
-          className="w-fit mx-auto lg:mx-0 px-8 py-3 rounded-full text-white text-lg cursor-pointer transition-all duration-300"
-          style={{
-            backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
-            boxShadow: `0 0 15px 3px var(--btn-shadow)`
-          }}
-        >
-          All Services
-        </button>
+        <ThemeButton type="submit">All Services</ThemeButton>
       </div>
 
       <div className="flex justify-around">

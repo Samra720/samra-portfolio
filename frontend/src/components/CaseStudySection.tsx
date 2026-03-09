@@ -37,7 +37,7 @@ function CaseStudySection() {
   ];
 
   return (
-    <div className="px-6 md:px-12 xl:px-25 pt-10 relative overflow-hidden">
+    <div id="my-projects" className="px-6 md:px-12 xl:px-25 pt-10 relative overflow-hidden">
       <div className="inset-0 -z-10 pointer-events-none">
         <div style={{ width: '100%', height: '1400px', position: 'absolute', top: '0', right: '0' }}>
           <Particles

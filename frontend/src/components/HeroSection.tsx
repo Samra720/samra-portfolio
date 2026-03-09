@@ -9,6 +9,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import ThemeButton from "./ThemeButton";
+import { scrollToId } from "../utils/scroll";
 
 
 function HeroSection() {
@@ -37,7 +39,7 @@ function HeroSection() {
       <Navbar />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-screen text-white px-6 md:px-24 pb-20 pt-10 md:pt-0">
-        
+
         <div className="space-y-6 order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
           <div>
             <GiHand className="text-[#f8b039] text-4xl md:text-5xl" />
@@ -65,13 +67,12 @@ function HeroSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 md:gap-4">
-            <button className="w-full sm:w-auto px-8 py-3 rounded-full text-white text-lg cursor-pointer transition-all duration-300"
-              style={{
-                backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
-                boxShadow: `0 0 15px 3px var(--btn-shadow)`
-              }}>
+            <ThemeButton
+              href="#contact"
+              onClick={(e: React.MouseEvent<HTMLAnchorElement>) => scrollToId(e, "contact")}
+            >
               Let's Talk
-            </button>
+            </ThemeButton>
             <button className="w-fit py-3 sm:ml-10 border-b-2 border-main text-muted flex hover:text-main transition-all cursor-pointer">
               Download Cv <FaArrowDown className="ml-4 my-auto" />
             </button>
@@ -84,7 +85,7 @@ function HeroSection() {
             alt="Portrait"
             className="w-full h-80 md:h-130 object-contain rounded-2xl opacity-90"
           />
-          
+
           <div className="hidden lg:block absolute left-1/2 lg:left-[-10%] top-full lg:top-1/2 -translate-x-1/2 lg:-translate-y-1/2 rounded-full w-42 h-42 pt-1 pl-1 bg-linear-to-r from-[#6580a8] via-[#9633b8] to-[#20c8c3]">
             <div className="relative rounded-full w-40 h-40 px-10 py-14 text-4xl bg-[#10111a]">
               Hello

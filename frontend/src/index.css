@@ -78,3 +78,14 @@
   animation: marquee 15s linear infinite;
 }
 
+@utility bg-size-200 {
+  background-size: 200% 100%;
+}
+
+@utility bg-pos-0 {
+  background-position: 0% 0%;
+}
+
+@utility bg-pos-100 {
+  background-position: 100% 0%;
+}

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ThemeButton from "./ThemeButton";
 
 const servicesList = [
   "Mobile App",
@@ -94,7 +95,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="px-6 md:px-12 xl:px-24 mt-20 md:mt-30 lg:mt-40">
+    <section id="contact" className="px-6 md:px-12 xl:px-24 mt-20 md:mt-30 lg:mt-40">
       <div>
         <div className="text-center mb-10 md:mb-20">
           <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:6xl xl:7xl max-w-4xl mx-auto mb-6 leading-tight">
@@ -210,18 +211,13 @@ export default function ContactSection() {
               </div>
 
               <div className="flex flex-col items-center md:items-end w-full gap-4">
-                <motion.button
+                <ThemeButton
                   type="submit"
-                  whileTap={{ scale: 0.95 }}
                   disabled={loading}
-                  className="w-full md:w-auto px-10 py-4 rounded-full font-medium text-white transition-all duration-300 shadow-lg"
-                  style={{
-                    backgroundImage: `linear-gradient(to right, var(--btn-grad-from), var(--btn-grad-via), var(--btn-grad-to))`,
-                    boxShadow: `0 0 15px 3px var(--btn-shadow)`
-                  }}
-                >
+                  className="md:w-auto ml-auto"
+                  >
                   {loading ? "Sending..." : "Send me your message"}
-                </motion.button>
+                </ThemeButton>
                 <p className="text-muted text-center md:text-right text-sm">
                   I'll try my best to get back to you as soon as possible!
                 </p>

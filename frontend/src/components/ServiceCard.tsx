@@ -18,7 +18,6 @@ function ServiceCard({ icon, title }: ServiceCardProps) {
 
         if (document.documentElement.getAttribute('data-theme') === 'light') {
           e.currentTarget.style.backgroundImage = 'none';
-          e.currentTarget.style.color = 'var(--card-hover-text)';
         } else {
           e.currentTarget.style.color = 'var(--card-hover-text)';
         }

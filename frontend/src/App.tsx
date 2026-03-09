@@ -1,4 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { FaArrowUp } from "react-icons/fa6";
+import { motion, AnimatePresence } from "framer-motion";
+import ThemeButton from './components/ThemeButton'; 
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import ExperienceSection from './components/ExperienceSection';
@@ -12,11 +15,25 @@ import './App.css';
 
 function App() {
   const [theme, setTheme] = useState('dark');
+  const [showScroll, setShowScroll] = useState(false);
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -25,10 +42,28 @@ function App() {
       
       <button 
         onClick={toggleTheme}
-        className="fixed bottom-5 right-5 z-50 p-3 rounded-full bg-main text-regal shadow-lg cursor-pointer font-bold"
+        className="fixed bottom-5 left-5 z-50 p-3 rounded-full bg-main text-regal shadow-lg cursor-pointer font-bold"
       >
-        {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
+        {theme === 'dark' ? '☀️' : '🌙'}
       </button>
+
+      <AnimatePresence>
+        {showScroll && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0, y: 20 }}
+            className="fixed bottom-5 right-5 z-50"
+          >
+            <ThemeButton 
+              onClick={scrollToTop} 
+              className="p-4! rounded-full! aspect-square flex items-center justify-center shadow-glow"
+            >
+              <FaArrowUp className="text-xl" />
+            </ThemeButton>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <HeroSection />
       <ServicesSection />
@@ -39,7 +74,7 @@ function App() {
       <ContactSection />
       <Footer />
     </>
-  )
+  );
 }
 
 export default App;
