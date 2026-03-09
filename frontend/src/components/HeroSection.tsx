@@ -79,9 +79,6 @@ function HeroSection() {
                 <FaArrowDown className="ml-4 my-auto transition-transform group-hover:translate-y-1" />
               </button>
             </a>
-            {/* <button className="w-fit py-3 sm:ml-10 border-b-2 border-main text-muted flex hover:text-main transition-all cursor-pointer">
-              Download Cv <FaArrowDown className="ml-4 my-auto" />
-            </button> */}
           </div>
         </div>
 
