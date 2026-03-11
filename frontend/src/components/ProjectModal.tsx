@@ -96,7 +96,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ModalProps) {
                         boxShadow: 'var(--btn-shadow)'
                     }}
                   >
-                    Explore Live Project
+                    Explore Project on GitHub
                   </a>
                 )}
               </div>

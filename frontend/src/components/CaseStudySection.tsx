@@ -7,34 +7,34 @@ function CaseStudySection() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const projects = [
-    {
-      id: 1,
-      title: "HTML, CSS & JS E-commerce Web Page",
-      type: "WEB APP",
-      description: "A detailed dive into a jewellery e-commerce interface. Focused on high-end aesthetics, smooth transitions, and a mobile-first user experience using vanilla web technologies.",
-      image: "/images/ecommerce_jewellery_page.png",
-      tags: ["HTML5", "CSS3", "JavaScript"],
-      link: "https://your-demo-link.com"
-    },
-    {
-      id: 2,
-      title: "MERN Stack Dashboard",
-      type: "WEB APP",
-      description: "A comprehensive B2B dashboard built with the MERN stack. Features real-time data visualization and secure authentication protocols.",
-      image: "/images/ecommerce_jewellery_page.png",
-      tags: ["MongoDB", "Express", "React", "Node"],
-      link: "https://your-demo-link.com"
-    },
-    {
-      id: 3,
-      title: "Next.js Jewellery Platform",
-      type: "WEB APP",
-      description: "Leveraging Next.js and Supabase for a high-performance jewellery catalogue with server-side rendering and instant search capabilities.",
-      image: "/images/ecommerce_jewellery_page.png", 
-      tags: ["Next.js", "Supabase", "Drizzle"],
-      link: "https://your-demo-link.com"
-    },
-  ];
+  {
+    id: 1,
+    title: "HTML, CSS & JS E-commerce Web Page",
+    type: "WEB APP",
+    description: "A detailed dive into a jewellery e-commerce interface. Focused on high-end aesthetics, smooth transitions, and a mobile-first user experience using vanilla web technologies.",
+    image: "/images/ecommerce_jewellery_page.png",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    link: "https://github.com/Samra720/portfolio1.git"
+  },
+  {
+    id: 2,
+    title: "MERN Stack Task Manager",
+    type: "FULL STACK",
+    description: "A robust Todo application featuring full CRUD functionality. Designed with a sleek Tailwind CSS interface, it handles persistent data storage with MongoDB and provides a seamless user experience.",
+    image: "/images/todo_mern_app.png",
+    tags: ["MongoDB", "Express", "React", "Node", "Tailwind"],
+    link: "https://github.com/Samra720/mern_task_manager.git"
+  },
+  {
+    id: 3,
+    title: "Interactive JavaScript Quiz",
+    type: "WEB APP",
+    description: "A dynamic quiz application featuring real-time feedback. Implements logic to instantly validate answers with red/green indicators and calculates a final score summary upon completion.",
+    image: "/images/js_quiz_app.png",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    link: "https://github.com/Samra720/js-quiz.git"
+  },
+];
 
   return (
     <div id="my-projects" className="px-6 md:px-12 xl:px-25 pt-10 relative overflow-hidden">
