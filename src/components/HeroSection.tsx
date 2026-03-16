@@ -7,8 +7,8 @@ import { HiSparkles } from "react-icons/hi";
 import { FaCheck } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { PiDevToLogo } from "react-icons/pi";
 import ThemeButton from "./ThemeButton";
 import { scrollToId } from "../utils/scroll";
 
@@ -103,12 +103,12 @@ function HeroSection() {
       <div className="mt-20 md:mt-35 px-6 md:px-24 flex flex-col lg:flex-row items-center w-full justify-between gap-8 pb-10">
         <div className="hidden lg:block border border-main bg-main w-40"></div>
         <div className="flex flex-wrap justify-center gap-6 md:gap-18">
-          <a href="" className="text-muted hover:text-main"><FaLinkedinIn className="inline mr-2" /> LinkedIn</a>
-          <a href="" className="text-muted hover:text-main"><BsInstagram className="inline mr-2" /> Instagram</a>
-          <a href="" className="text-muted hover:text-main"><FaFacebookF className="inline mr-2" /> Facebook</a>
+          <a href="https://www.linkedin.com/in/syeda-samra-ali-590878283/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-main"><FaLinkedinIn className="inline mr-2 text-xl" /> LinkedIn</a>
+          <a href="https://github.com/Samra720" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-main"><FaGithub className="inline mr-2 text-xl" /> GitHub</a>
+          <a href="https://dev.to/samra_ali_c61e5f484408aff" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-main"><PiDevToLogo className="inline mr-2 text-2xl" /> Dev.to</a>
         </div>
         <div className="hidden lg:block border border-main bg-main w-60"></div>
-        <a href="" className="text-muted hover:text-main whitespace-nowrap"><FaEnvelope className="inline mr-3" /> alisamra720@gmail.com</a>
+        <a href="mailto:alisamra720@gmail.com" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-main whitespace-nowrap"><FaEnvelope className="inline mr-3 text-xl" /> alisamra720@gmail.com</a>
       </div>
     </section>
   );

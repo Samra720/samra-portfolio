@@ -19,10 +19,10 @@ export default function Footer() {
   const socialLinks = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/syeda-samra-ali-590878283/" },
     { name: "GitHub", url: "https://github.com/Samra720" },
-    { name: "Dev.to", url: "https://dev.to/samra-dev" },
-    { name: "Live Demos", url: "https://vercel.com/samra-projects" },
+    { name: "Dev.to", url: "https://dev.to/samra_ali_c61e5f484408aff" },
+    { name: "Live Demos", url: "https://vercel.com/samras-projects-d92f24a9/samra-portfolio" },
   ];
-
+// https://vercel.com/samra-projects
   return (
     <footer className="text-muted px-6 md:px-12 xl:px-24 mt-20">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 w-full py-12 border-t-2 border-main">
