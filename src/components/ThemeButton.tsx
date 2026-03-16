@@ -1,5 +1,5 @@
 import { motion, type HTMLMotionProps } from "framer-motion";
-import { NavLink, type NavLinkProps } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 type ThemeButtonProps = {
   children: React.ReactNode;
