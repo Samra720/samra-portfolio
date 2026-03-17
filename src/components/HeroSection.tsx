@@ -46,7 +46,7 @@ function HeroSection() {
             <h1 className="text-5xl md:text-7xl font-light text-main">
               Hello! <br className="md:hidden" />
               <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-(--name-color-start) to-(--name-color-end)">
-                I'm Cb97
+                I'm Samra
               </span>
             </h1>
 
@@ -57,12 +57,12 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="text-muted max-w-xl">
-            <p>Hello! I'm Samra. I'm a <span className="text-white font-medium">Web Developer, design thinker, product designer,</span> experience strategist, generative artist & human-loving introvert</p>
+          <div className="text-muted max-w-[500px]">
+            <p>Hello! I'm Samra. I'm a <span className="text-white font-medium">Web Developer, MERN Stack Enthusiast, QA & Testing Lead,</span> Problem Solver, clean-code advocate & human-loving introvert</p>
             <ul className="my-8 md:mt-13 space-y-2">
-              <li><FaCheck className="inline mr-4 mb-1" /> Product must be authentic</li>
-              <li><FaCheck className="inline mr-4 mb-1" /> Solve pain points elegantly</li>
-              <li><FaCheck className="inline mr-4 mb-1" /> User testing, feedback and validation</li>
+              <li><FaCheck className="inline mr-4 mb-1" /> Scalable and performant architecture</li>
+              <li><FaCheck className="inline mr-4 mb-1" /> Solving complex logic with clean code</li>
+              <li><FaCheck className="inline mr-4 mb-1" /> Continuous QA, testing, and validation</li>
             </ul>
           </div>
 

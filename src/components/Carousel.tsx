@@ -2,13 +2,18 @@ import { HiSparkles } from "react-icons/hi";
 
 function GradientCarouselBar() {
   const items = [
-    'UI/UX DESIGN',
-    'APP DESIGN',
-    'WEB FLOW',
-    'BRANDING',
-    'DEVELOPMENT',
-    'PRODUCT DESIGN',
-  ];
+  'MERN STACK',
+  'REACT & NEXT.JS',
+  'BACKEND LOGIC',
+  'DATABASE ARCHITECTURE',
+  'QA & TESTING',
+  'API INTEGRATION',
+  'SUPABASE & DRIZZLE',
+  'TAILWIND CSS',
+  'MONGODB & EXPRESS',
+  'NODE.JS RUNTIME',
+  'FULL-STACK SOLUTIONS',
+];
 
   const sequence = items.flatMap((item) => [
     item,
