@@ -23,9 +23,8 @@ function ExperienceSection() {
         <div className="flex flex-col justify-between items-center text-center mb-10">
           <div className="h-3 w-3 border rounded-full shadow-glow"></div>
           <h2 className="text-4xl md:text-5xl font-bold mt-6">EXPERIENCE</h2>
-          <p className="max-w-xl mt-4 opacity-80">
-            There are many variations of passages of Lorem Ipsum, but the
-            majority have suffered alteration in some form.
+          <p className="max-w-[690px] mt-4 opacity-80">
+            Currently contributing to high-impact B2B platforms, where I bridge the gap between clean code and functional design. My experience focuses on delivering production-ready features, optimizing user workflows, and maintaining rigorous testing standards across the full stack.
           </p>
         </div>
 
