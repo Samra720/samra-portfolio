@@ -39,15 +39,14 @@ function ServicesSection() {
         <div className="w-full lg:w-90">
           <p className="mb-2">
             <span className="text-2xl hidden lg:inline">____</span>{" "}
-            <span className="text-sm ml-1 uppercase tracking-widest">MY SERVICES ?</span>
+            <span className="text-sm ml-1 uppercase tracking-widest">HOW I CONTRIBUTE</span>
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 lg:mb-12">What I'm Offering</h2>
+          <h2 className="text-4xl md:text-5 xl font-bold mb-6 lg:mb-12">Building Modern Web Solutions</h2>
         </div>
-        <p className="w-full lg:w-120 opacity-80 mb-8 lg:mb-0">
-          There are many variations of passages of Lorem Ipsum, but the
-          majority have suffered alteration in some form.
+        <p className="w-full lg:w-140 opacity-80 mb-8 lg:mb-0">
+          I specialize in the MERN stack and modern frameworks like Next.js to create efficient, data-driven applications. I thrive on solving complex frontend challenges and optimizing backend workflows for real-world B2B platforms.
         </p>
-        <ThemeButton type="submit">All Services</ThemeButton>
+        <ThemeButton type="submit">View My Stack</ThemeButton>
       </div>
 
       <div className="flex justify-around">
@@ -74,13 +73,13 @@ function ServicesSection() {
           >
             <div className="flex flex-row justify-around gap-8 shrink-0">
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<CiPen className="text-6xl" />} title="UI/UX CREATIVE DESIGN" />
+                <ServiceCard icon={<CiPen className="text-6xl" />} title="RESPONSIVE UI DESIGN" />
               </div>
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<MdOutlineMonitor className="text-6xl" />} title="VISUAL GRAPHIC DESIGN" />
+                <ServiceCard icon={<MdOutlineMonitor className="text-6xl" />} title="USER EXPERIENCE (UX)" />
               </div>
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<PiStrategy className="text-6xl" />} title="STRATEGY & DIGITAL MARKETING" />
+                <ServiceCard icon={<PiStrategy className="text-6xl" />} title="QA & SYSTEM TESTING" />
               </div>
             </div>
 
