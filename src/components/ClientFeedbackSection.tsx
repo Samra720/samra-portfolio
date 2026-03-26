@@ -6,7 +6,7 @@ export default function ClientFeedbackSection() {
   return (
     <div className="px-6 md:px-12 xl:px-24 py-10 overflow-hidden">
       <div className="w-full lg:w-[55%] mb-10 lg:mb-0 flex justify-between ml-auto items-center">
-        <h2 className="border-b-2 text-md md:text-xl font-semibold inline pb-1">CLIENT FEEDBACK</h2>
+        <h2 className="border-b-2 text-md md:text-xl font-semibold inline pb-1">MENTOR FEEDBACK</h2>
         <LuCross className="text-main inline text-2xl md:text-3xl lg:text-4xl xl:text-5xl rotate-45" />
       </div>
 
@@ -15,7 +15,11 @@ export default function ClientFeedbackSection() {
           <SiComma className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl inline rotate-180 -mr-2" />
           <SiComma className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl inline rotate-180" />
         </div>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold pl-8 pr-10 tracking-wide"><span className="pl-20">I just wanted to share a quick</span> <span>note and let you know that you</span> guys do a really good job.</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold pl-8 pr-10 tracking-wide">
+          <span className="pl-20">A reliable developer who treats</span>
+          <span> production code with the care it deserves</span>
+          <span> and ensures every feature is truly ready for live users.</span>
+        </h1>
       </div>
 
       <div className="my-5 md:my-10 pr-0 xl:pr-20 flex flex-col xl:flex-row justify-between items-center gap-8 xl:gap-10">
@@ -23,9 +27,9 @@ export default function ClientFeedbackSection() {
 
           <div className="relative inline-block">
             <h2 className="text-main text-2xl font-semibold">
-              Syeda Samra Ali
+              Hazique Nadeem
             </h2>
-            <p className="text-muted text-lg md:text-xl pb-6 pt-2">MERN Stack Intern, Sprouto</p>
+            <p className="text-muted text-lg md:text-xl pb-6 pt-2">Software Engineer - Angular @ Ibex</p>
             <svg
               viewBox="0 0 200 10"
               preserveAspectRatio="none"
