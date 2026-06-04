@@ -23,7 +23,7 @@ function Navbar() {
       `}>
 
         <li className="hover:text-main transition cursor-pointer border-t-2">
-          <a href="#my-projects" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "contact")}>
+          <a href="#my-projects" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "my-projects")}>
             <div className="w-full md:w-42.5">
               <div className="flex justify-between">
                 <h3 className="font-bold text-xl mb-2 pt-1">My Projects</h3>
@@ -35,13 +35,13 @@ function Navbar() {
         </li>
 
         <li className="hover:text-main transition cursor-pointer border-t-2">
-          <a href="#about-me" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "contact")}>
+          <a href="#about-me" className="hover:text-main transition-all" onClick={(e) => scrollToId(e, "about-me")}>
             <div className="w-full md:w-42.5">
               <div className="flex justify-between">
                 <h3 className="font-bold text-xl mb-2 pt-1">About Me</h3>
                 <MdArrowOutward className="my-auto" />
               </div>
-              <p>Learn about my self what I do</p>
+              <p>Learn about my experience</p>
             </div>
           </a>
         </li>
