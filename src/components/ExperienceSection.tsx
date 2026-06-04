@@ -46,6 +46,33 @@ function ExperienceSection() {
               </div>
 
               <div>
+                <h3 className="text-2xl font-bold pb-1 group-hover:text-white!">Junior MERN Stack Developer</h3>
+                <p className="text-md opacity-80 group-hover:text-white!">Brandably (Sprouto group - Lahore)</p>
+              </div>
+            </div>
+
+            <p className="mt-8 md:mt-0 font-semiblack text-xl md:px-8 md:border-l-2 border-main group-hover:text-white! group-hover:border-white transition-colors">
+              Working here since 1st April, 2026
+            </p>
+          </div>
+
+          <div
+            className="group border border-[#171725] px-8 md:px-12 py-10 md:py-12 my-6 md:my-10 
+              flex flex-col md:flex-row justify-between items-center text-center md:text-left
+              transition-all duration-300 cursor-pointer 
+              hover:bg-(--card-hover-bg) hover:text-(--card-hover-text)"
+            style={{ color: 'var(--text-color)' }}
+          >
+            <div className="flex flex-col md:flex-row gap-6 md:gap-15 items-center md:items-center">
+              <div
+                className="w-14 h-14 text-2xl font-bold flex items-center justify-center transition-all duration-300
+                  bg-(--num-bg) text-(--num-text) 
+                  group-hover:bg-(--num-text) group-hover:text-(--num-bg)"
+              >
+                2
+              </div>
+
+              <div>
                 <h3 className="text-2xl font-bold pb-1 group-hover:text-white!">MERN Stack Intern</h3>
                 <p className="text-md opacity-80 group-hover:text-white!">Sprouto - Lahore</p>
               </div>
@@ -67,7 +94,7 @@ function ExperienceSection() {
                 className="w-14 h-14 text-2xl font-bold flex items-center justify-center transition-all duration-300
                   bg-(--num-bg) text-(--num-text) group-hover:bg-(--num-text) group-hover:text-(--num-bg)"
               >
-                2
+                3
               </div>
 
               <div>
