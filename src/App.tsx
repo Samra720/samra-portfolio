@@ -6,7 +6,7 @@ import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import ExperienceSection from './components/ExperienceSection';
 import CaseStudySection from './components/CaseStudySection';
-import ClientFeedbackSection from './components/ClientFeedbackSection';
+import MentorFeedbackSection from './components/MentorFeedbackSection';
 import StatsSection from './components/StatsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -69,7 +69,7 @@ function App() {
       <ServicesSection />
       <ExperienceSection />
       <CaseStudySection />
-      <ClientFeedbackSection />
+      <MentorFeedbackSection />
       <StatsSection />
       <ContactSection />
       <Footer />

@@ -41,12 +41,12 @@ function ServicesSection() {
             <span className="text-2xl hidden lg:inline">____</span>{" "}
             <span className="text-sm ml-1 uppercase tracking-widest">HOW I CONTRIBUTE</span>
           </p>
-          <h2 className="text-4xl md:text-5 xl font-bold mb-6 lg:mb-12">Building Modern Web Solutions</h2>
+          <h2 className="text-4xl md:text-5 xl font-bold mb-6 lg:mb-12">Ensuring Quality Through Testing</h2>
         </div>
         <p className="w-full lg:w-140 opacity-80 mb-8 lg:mb-0">
-          I specialize in the MERN stack and modern frameworks like Next.js to create efficient, data-driven applications. I thrive on solving complex frontend challenges and optimizing backend workflows for real-world B2B platforms.
+          I approach software quality through structured manual testing, thoughtful test design, and systematic defect validation. From functional and regression testing to responsive UI checks and Playwright automation, I focus on identifying issues early and helping deliver reliable web applications.
         </p>
-        <ThemeButton type="submit">View My Stack</ThemeButton>
+        <ThemeButton type="submit">Explore My Skills</ThemeButton>
       </div>
 
       <div className="flex justify-around">
@@ -73,25 +73,30 @@ function ServicesSection() {
           >
             <div className="flex flex-row justify-around gap-8 shrink-0">
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<CiPen className="text-6xl" />} title="RESPONSIVE UI DESIGN" />
+                <ServiceCard icon={<MdOutlineMonitor className="text-6xl" />} title="FUNCTIONAL & REGRESSION TESTING" />
+                {/* <ServiceCard icon={<CiPen className="text-6xl" />} title="FUNCTIONAL & REGRESSION TESTING" /> */}
               </div>
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<MdOutlineMonitor className="text-6xl" />} title="USER EXPERIENCE (UX)" />
+                {/* <ServiceCard icon={<MdOutlineMonitor className="text-6xl" />} title="UI & RESPONSIVE TESTING" /> */}
+                <ServiceCard icon={<MdOutlineMonitor className="text-6xl" />} title="UI & RESPONSIVE TESTING" />
               </div>
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<PiStrategy className="text-6xl" />} title="QA & SYSTEM TESTING" />
+                <ServiceCard icon={<PiStrategy className="text-6xl" />} title="EXPLORATORY TESTING" />
               </div>
             </div>
 
             <div className="flex flex-row justify-around gap-8 shrink-0">
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<FaNodeJs className="text-6xl" />} title="WEB DEVELOPMENT" />
+                {/* <ServiceCard icon={<FaNodeJs className="text-6xl" />} title="TEST CASE DESIGN & DEFECT REPORTING" /> */}
+                <ServiceCard icon={<CiPen className="text-6xl" />} title="TEST CASE DESIGN & DEFECT REPORTING" />
               </div>
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<FaReact className="text-6xl" />} title="FRONTEND DEVELOPMENT" />
+                {/* <ServiceCard icon={<FaReact className="text-6xl" />} title="PLAYWRIGHT TEST AUTOMATION" /> */}
+                <ServiceCard icon={<FaReact className="text-6xl" />} title="PLAYWRIGHT TEST AUTOMATION" />
               </div>
               <div className="w-[85vw] md:w-[45vw] lg:w-auto shrink-0 snap-center">
-                <ServiceCard icon={<FaNode className="text-6xl" />} title="BACKEND DEVELOPMENT" />
+                {/* <ServiceCard icon={<FaNode className="text-6xl" />} title="WEB APPLICATION VALIDATION" /> */}
+                <ServiceCard icon={<FaNode className="text-6xl" />} title="WEB APPLICATION VALIDATION" />
               </div>
             </div>
           </div>

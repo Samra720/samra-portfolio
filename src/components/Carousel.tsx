@@ -2,18 +2,28 @@ import { HiSparkles } from "react-icons/hi";
 
 function GradientCarouselBar() {
   const items = [
-  'MERN STACK',
-  'REACT & NEXT.JS',
-  'BACKEND LOGIC',
-  'DATABASE ARCHITECTURE',
-  'QA & TESTING',
-  'API INTEGRATION',
-  'SUPABASE & DRIZZLE',
-  'TAILWIND CSS',
-  'MONGODB & EXPRESS',
-  'NODE.JS RUNTIME',
-  'FULL-STACK SOLUTIONS',
-];
+    'FUNCTIONAL TESTING',
+    'REGRESSION TESTING',
+    'EXPLORATORY TESTING',
+    'UI & RESPONSIVE TESTING',
+    'PLAYWRIGHT & TYPESCRIPT',
+    'DEFECT REPORTING',
+    'TEST CASE DESIGN',
+    'WEB APPLICATION QUALITY',
+  ];
+  //   const items = [
+//   'MERN STACK',
+//   'REACT & NEXT.JS',
+//   'BACKEND LOGIC',
+//   'DATABASE ARCHITECTURE',
+//   'QA & TESTING',
+//   'API INTEGRATION',
+//   'SUPABASE & DRIZZLE',
+//   'TAILWIND CSS',
+//   'MONGODB & EXPRESS',
+//   'NODE.JS RUNTIME',
+//   'FULL-STACK SOLUTIONS',
+// ];
 
   const sequence = items.flatMap((item) => [
     item,

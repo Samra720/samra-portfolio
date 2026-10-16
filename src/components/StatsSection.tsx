@@ -15,7 +15,7 @@ export default function StatsSection() {
 
         <div className="border-b md:border-y xl:border-r p-10 xl:p-14 flex flex-col items-center xl:items-start text-center xl:text-left">
           <IoShieldCheckmark className="text-5xl md:text-6xl text-main" />
-          <h1 className="text-4xl md:text-5xl font-semibold my-5">100%</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold my-5">95%</h1>
           <p className="text-muted text-md uppercase tracking-wider">QA Pass Rate on Production</p>
         </div>
 

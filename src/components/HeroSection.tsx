@@ -52,17 +52,17 @@ function HeroSection() {
 
             <div className="mt-7 text-main flex items-center justify-between max-w-125">
               <div className="border w-16 md:w-40 my-auto" />
-              <p className="text-xl md:text-3xl ml-3">Web Developer</p>
+              <p className="text-xl md:text-3xl ml-3">SQA Engineer</p>
               <HiSparkles className="my-auto text-2xl md:text-4xl" />
             </div>
           </div>
 
           <div className="text-muted max-w-[500px]">
-            <p>Hello! I'm Samra. I'm a <span className="text-white font-medium">Web Developer, MERN Stack Enthusiast, QA & Testing Lead,</span> Problem Solver, clean-code advocate & human-loving introvert</p>
+            <p>Hello! I'm Samra. I'm a <span className="text-white font-medium">SQA Engineer focused on software quality,</span> systematic testing, and reliable user experiences.</p>
             <ul className="my-8 md:mt-13 space-y-2">
-              <li><FaCheck className="inline mr-4 mb-1" /> Scalable and performant architecture</li>
-              <li><FaCheck className="inline mr-4 mb-1" /> Solving complex logic with clean code</li>
-              <li><FaCheck className="inline mr-4 mb-1" /> Continuous QA, testing, and validation</li>
+              <li><FaCheck className="inline mr-4 mb-1" /> Functional, regression & exploratory testing</li>
+              <li><FaCheck className="inline mr-4 mb-1" /> UI, responsive & cross-functional testing</li>
+              <li><FaCheck className="inline mr-4 mb-1" /> Playwright automation with TypeScript</li>
             </ul>
           </div>
 
@@ -85,7 +85,7 @@ function HeroSection() {
         <div className="relative order-1 lg:order-2">
           <img
             src="/images/Capture1.PNG"
-            alt="Portrait"
+            alt="Samra Ali"
             className="w-full h-80 md:h-130 object-contain rounded-2xl opacity-90"
           />
 

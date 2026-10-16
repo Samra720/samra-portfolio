@@ -2,7 +2,7 @@ import { LuCross } from "react-icons/lu";
 import { SiComma } from "react-icons/si";
 import { LuWaves } from "react-icons/lu";
 
-export default function ClientFeedbackSection() {
+export default function MentorFeedbackSection() {
   return (
     <div className="px-6 md:px-12 xl:px-24 py-10 overflow-hidden">
       <div className="w-full lg:w-[55%] mb-10 lg:mb-0 flex justify-between ml-auto items-center">
@@ -16,9 +16,9 @@ export default function ClientFeedbackSection() {
           <SiComma className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl inline rotate-180" />
         </div>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold pl-8 pr-10 tracking-wide">
-          <span className="pl-20">A reliable developer who treats</span>
-          <span> production code with the care it deserves</span>
-          <span> and ensures every feature is truly ready for live users.</span>
+          <span className="pl-20">A detail-oriented QA engineer who</span>
+          <span> approaches every feature with a critical eye</span>
+          <span> and helps ensure software is reliable and ready for users.</span>
         </h1>
       </div>
 
@@ -52,7 +52,8 @@ export default function ClientFeedbackSection() {
         </div>
 
         <img
-          src="/images/ecommerce_jewellery_page.png"
+          // src="/images/ecommerce_jewellery_page.png"
+          src="/images/mentor.png"
           alt="ecommerce_jewellery_page"
           className="w-full xl:w-160 h-auto lg:h-90 object-contain"
         />
