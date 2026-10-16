@@ -3,7 +3,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { MdOutlineMonitor } from "react-icons/md";
 import { PiStrategy } from "react-icons/pi";
 import { CiPen } from "react-icons/ci";
-import { FaNodeJs, FaReact, FaNode } from "react-icons/fa";
+import { FaReact, FaNode } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 import ThemeButton from './ThemeButton';
 
